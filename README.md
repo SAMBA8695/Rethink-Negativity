@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+🧠 Inner Critic Tamer
+A simple React app that helps users reframe their inner negative self-talk into constructive, compassionate responses. It detects inner critic personas, recurring negative themes, and provides rewrites via a local API.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+📁 Folder Structure
+pgsql
+Copy
+Edit
+inner-critic-tamer/
+│
+├── public/                  # Static files
+│   └── index.html
+│
+├── src/
+│   ├── InnerCriticTamer.jsx # Main React component
+│   ├── index.js             # React entry point
+│   └── App.jsx              # App wrapper (optional)
+│
+├── server/
+│   └── server.js            # Express backend to handle /api/reframe
+│
+├── package.json             # Project dependencies
+└── README.md                # You're reading it!
+🧰 Requirements
+Node.js (v16 or later recommended)
 
-## Available Scripts
+npm or yarn
 
-In the project directory, you can run:
+🚀 How to Run It Locally
+Clone the Repository
 
-### `npm start`
+bash
+Copy
+Edit
+git clone https://github.com/your-username/inner-critic-tamer.git
+cd inner-critic-tamer
+Install Dependencies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy
+Edit
+npm install
+Start the Backend Server
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+In a new terminal window/tab:
 
-### `npm test`
+bash
+Copy
+Edit
+cd server
+node server.js
+This runs an Express server on http://localhost:3001.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Start the Frontend App
 
-### `npm run build`
+In the root folder:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+Copy
+Edit
+npm start
+This starts the React app at http://localhost:3000.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Interact
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Type a negative self-thought.
 
-### `npm run eject`
+See the detected "Inner Critic" persona and recurring emotional themes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Get an AI-generated constructive reframe.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🧠 Features
+Detects common critic personas (Perfectionist, Inner Child, etc.)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Highlights recurring negative themes
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Sends input to a local Express API for AI reframe
 
-## Learn More
+Displays AI and user messages in a styled UI
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🛠️ Note
+You can modify the detection logic in InnerCriticTamer.jsx and the rewrite logic in server/server.js.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📄 License
+MIT License
