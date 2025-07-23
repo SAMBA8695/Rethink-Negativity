@@ -1,0 +1,89 @@
+.tamer-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 2rem;
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tamer-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #3b3b98;
+}
+
+.tamer-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  color: #636e72;
+  margin-bottom: 1.5rem;
+}
+
+.tamer-persona-box,
+.tamer-theme-box {
+  background-color: #dfe6e9;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  margin: 0.5rem 0;
+  font-weight: 500;
+  color: #2d3436;
+}
+
+.tamer-chatbox {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.tamer-message {
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.tamer-message.user {
+  background-color: #d1f0ff;
+  text-align: right;
+}
+
+.tamer-message.ai {
+  background-color: #f1f2f6;
+  text-align: left;
+}
+
+.tamer-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  resize: none;
+  font-size: 1rem;
+}
+
+.tamer-button {
+  background-color: #6c5ce7;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.tamer-button:hover {
+  background-color: #a29bfe;
+  transform: scale(1.02);
+}
+
