@@ -1,84 +1,60 @@
-🧠 Inner Critic Tamer
-A simple React app that helps users reframe their inner negative self-talk into constructive, compassionate responses. It detects inner critic personas, recurring negative themes, and provides rewrites via a local API.
+# 🧠 Inner Critic Tamer
 
-📁 Folder Structure
-pgsql
-Copy
-Edit
-inner-critic-tamer/
-│
-├── public/                  # Static files
-│   └── index.html
-│
+A simple React-based emotional coaching tool that helps reframe negative self-talk using cognitive behavioral patterns and persona/theme detection.
+
+## 💡 Overview
+
+This app helps users:
+- Detect the kind of **inner critic** (e.g., Perfectionist, Guilt-Tripper).
+- Identify recurring **emotional themes** in their input.
+- Reframe negative thoughts into constructive affirmations using a backend API.
+
+## 🗂️ Project Structure
+
+root/
+├── public/
+│ └── index.html # Main HTML file
 ├── src/
-│   ├── InnerCriticTamer.jsx # Main React component
-│   ├── index.js             # React entry point
-│   └── App.jsx              # App wrapper (optional)
-│
-├── server/
-│   └── server.js            # Express backend to handle /api/reframe
-│
-├── package.json             # Project dependencies
-└── README.md                # You're reading it!
-🧰 Requirements
-Node.js (v16 or later recommended)
-
-npm or yarn
-
-🚀 How to Run It Locally
-Clone the Repository
+│ ├── InnerCriticTamer.jsx # Main React component (core logic)
+│ ├── index.js # React entry point
+│ └── App.js # Mounts InnerCriticTamer
+├── package.json # Project metadata and dependencies
+└── README.md # This file
 
 bash
 Copy
 Edit
+
+> 💡 The `InnerCriticTamer.css` file is now deprecated and can be safely deleted.
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+```bash
 git clone https://github.com/your-username/inner-critic-tamer.git
 cd inner-critic-tamer
-Install Dependencies
-
+2. Install dependencies
 bash
 Copy
 Edit
 npm install
-Start the Backend Server
-
-In a new terminal window/tab:
-
-bash
-Copy
-Edit
-cd server
-node server.js
-This runs an Express server on http://localhost:3001.
-
-Start the Frontend App
-
-In the root folder:
-
+3. Start the frontend
 bash
 Copy
 Edit
 npm start
-This starts the React app at http://localhost:3000.
+The React app will run at http://localhost:3000
 
-Interact
+4. Start the backend (if applicable)
+This project expects a backend at:
 
-Type a negative self-thought.
+bash
+Copy
+Edit
+http://localhost:3001/api/reframe
+Make sure your backend returns a response like:
 
-See the detected "Inner Critic" persona and recurring emotional themes.
-
-Get an AI-generated constructive reframe.
-
-🧠 Features
-Detects common critic personas (Perfectionist, Inner Child, etc.)
-
-Highlights recurring negative themes
-
-Sends input to a local Express API for AI reframe
-
-Displays AI and user messages in a styled UI
-
-🛠️ Note
-You can modify the detection logic in InnerCriticTamer.jsx and the rewrite logic in server/server.js.
-
-📄 License
-MIT License
+json
+Copy
+Edit
+{ "rewritten": "Your reframed thought here." }
